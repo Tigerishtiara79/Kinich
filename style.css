@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --light-clr: #FFF;
+    --dark-clr: #23272A;
+    --brand-clr: #7289DA;
+    --off-white-clr: #f6f6f6;
+    --general-font-size: 2.5rem;
+    --primary-title-font-size: 4.5rem;
+    --secondary-title-font-size: 4rem;
+    --main-font-family-light: 'Whitney Light', sans-serif;
+    --main-font-family-medium: 'Whitney Medium', sans-serif;
+    --main-font-family-bold: 'Whitney Bold', sans-serif;
+    --num-of-grid-columns: 4;
+    --section-spacing: 5.6rem 2.4rem;
+    --container-width: 126rem;
+}
+
+body {
+    font-size: var(--general-font-size);
+    font-family: var(--main-font-family-light);
+    background: #23272A;
+    color: #f6f6f6;
+}
+
+#video1 {
+    width: 100%;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 2rem;
+    padding: var(--section-spacing);
+}
+
+.primary-title {
+    font-size: var(--primary-title-font-size);
+}
+
+.secondary-title {
+    font-size: var(--secondary-title-font-size);
+}
+
+/*Section 1*/
+
+#carouselExampleSlidesOnly  {
+    margin-top: 2.4rem;
+    grid-column: span 4;
+}
+
+.text-group1 {
+    margin-top: 2rem;
+    grid-column: span 4;
+}
+
+/*Section 2*/
+
+.text-group2 {
+    margin-top: 2rem;
+    grid-row: span 1;
+    grid-column: span 4;
+}
+
+.elm-grp1 {
+    grid-row: 2/span 1;
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.elm-grp2 {
+font-family: Arial, Helvetica, sans-serif;
+    grid-row: 3/span 1;
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rimg {
+    border-radius: 50%;
+    margin: 2rem;
+    max-width: calc(70vw/3);
+    
+}
+
+/*Section 3*/
+
+.row > .tuna {
+    grid-row: span 1;
+    grid-column: span 4;
+}
+
+.row > #gimg1{
+    margin-top: 2.4rem;
+    grid-row: 2/span 1;
+    grid-column: 1/span 2;
+}
+
+.row > #gimg2{
+    margin-top: 2.4rem;
+    grid-row: 2/span 1;
+    grid-column: 3/span 2;
+}
+
+.row > #gimg3{
+    margin-top: 2.4rem;
+    grid-row: 3/span 1;
+    grid-column: 1/span 2;
+}
+
+.row > #gimg4{
+    margin-top: 2.4rem;
+    grid-row: 3/span 1;
+    grid-column: 3/span 2;
+}
+
+.row > #gimg5{
+    margin-top: 2.4rem;
+    grid-row: 4/span 1;
+    grid-column: 1/span 2;
+}
+
+.row > #gimg6{
+    margin-top: 2.4rem;
+    grid-row: 4/span 1;
+    grid-column: 3/span 2;
+}
+
+/*Section 4*/
+
+.text-group4 {
+    margin-top: 2rem;
+    grid-column: span 4;
+}
+
+#video2 {
+    margin-top: 2.4rem;
+    grid-column: span 4;
+}
+
+/*Section 5*/
+
+.text-group5 {
+    margin-top: auto;
+    grid-column: span 4;
+}
+
+#carouselExampleSlidesOnly1  {
+    margin-top: auto;
+    grid-column: span 6;
+}
+
+/*Section 6*/
+
+.row > .pizza {
+    grid-row: span 1;
+    grid-column: span 4;
+}
+
+.row > #g2img1{
+    margin-top: 2.4rem;
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+    height: 32rem;
+    object-fit: cover;
+}
+
+.row > #g2img2{
+    margin-top: 2.4rem;
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+    height: 32rem;
+    object-fit: cover;
+}
+
+.row > #g2img3{
+    margin-top: 2.4rem;
+    grid-row: 2/span 1;
+    grid-column: 3/span 1;
+    height: 32rem;
+    object-fit: cover;
+}
+
+.row > #g2img4{
+    margin-top: 2.4rem;
+    grid-row: 2/span 1;
+    grid-column: 4/span 1;
+    height: 32rem;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --light-clr: #FFF;
+        --dark-clr: #23272A;
+        --brand-clr: #7289DA;
+        --off-white-clr: #f6f6f6;
+        --general-font-size: 1.5rem;
+        --primary-title-font-size: 4.5rem;
+        --secondary-title-font-size: 4rem;
+        --main-font-family-light: 'Whitney Light', sans-serif;
+        --main-font-family-medium: 'Whitney Medium', sans-serif;
+        --main-font-family-bold: 'Whitney Bold', sans-serif;
+        --num-of-grid-columns: 4;
+        --section-spacing: 5.6rem 2.4rem;
+        --container-width: 126rem;
+    }
+    
+    body {
+        font-size: var(--general-font-size);
+        font-family: var(--main-font-family-light);
+    }
+    
+    #video1 {
+        width: 100%;
+    }
+    
+    .container {
+        max-width: var(--container-width);
+        margin: 0 auto;
+    }
+    
+    .row {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0 2rem;
+        padding: var(--section-spacing);
+    }
+
+    .primary-title {
+        font-size: var(--primary-title-font-size);
+    }
+
+    .secondary-title {
+        font-size: var(--secondary-title-font-size);
+    }
+    
+    /*Section 1*/
+    
+    #carouselExampleSlidesOnly  {
+        margin-top: auto;
+        grid-column: span 3;
+    }
+    
+    .text-group1 {
+        margin-top: auto;
+        grid-column: 4/span 3;
+    }
+    
+    /*Section 2*/
+
+    .text-group2 {
+        margin-top: 2rem;
+        grid-row: span 1;
+        grid-column: span 6;
+    }
+    
+    .elm-grp1 {
+        grid-row: 2/span 1;
+        grid-column: span 6;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .elm-grp2 {
+        grid-row: 3/span 1;
+        grid-column: span 6;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .rimg {
+        border-radius: 50%;
+        margin: 2rem;
+        max-width: calc(70vw/3);
+    }
+    
+    /*Section 3*/
+
+    .row > .tuna {
+        grid-row: span 1;
+        grid-column: span 6;
+    }
+    
+    .row > #gimg1{
+        margin-top: 2.4rem;
+        grid-row: 2/span 1;
+        grid-column: 1/span 2;
+    }
+    
+    .row > #gimg2{
+        margin-top: 2.4rem;
+        grid-row: 2/span 1;
+        grid-column: 3/span 2;
+    }
+    
+    .row > #gimg3{
+        margin-top: 2.4rem;
+        grid-row: 2/span 1;
+        grid-column: 5/span 2;
+    }
+    
+    .row > #gimg4{
+        margin-top: 2.4rem;
+        grid-row: 3/span 1;
+        grid-column: 1/span 2;
+    }
+    
+    .row > #gimg5{
+        margin-top: 2.4rem;
+        grid-row: 3/span 1;
+        grid-column: 3/span 2;
+    }
+    
+    .row > #gimg6{
+        margin-top: 2.4rem;
+        grid-row: 3/span 1;
+        grid-column: 5/span 2;
+    }
+    
+    /*Section 4*/
+
+    .text-group4 {
+        margin-top: auto;
+        grid-column: span 3;
+    }
+    
+    #video2 {
+        margin-top: 2.4rem;
+        grid-column: 4/span 3;
+    }
+    
+    /*Section 5*/
+
+    .text-group5 {
+        margin-top: auto;
+        grid-column: span 6;
+    }
+
+    #carouselExampleSlidesOnly1  {
+        margin-top: auto;
+        grid-column: span 6;
+    }
+    
+    /*Section 6*/
+    
+    .row > .pizza {
+        grid-row: span 1;
+        grid-column: span 6;
+    }
+    
+    .row > #g2img1{
+        margin-top: 2.4rem;
+        grid-row: 2/span 2;
+        grid-column: 2/span 1;
+        height: 32rem;
+        object-fit: cover;
+    }
+    
+    .row > #g2img2{
+        margin-top: 2.4rem;
+        grid-row: 2/span 2;
+        grid-column: 3/span 1;
+        height: 32rem;
+        object-fit: cover;
+    }
+    
+    .row > #g2img3{
+        margin-top: 2.4rem;
+        grid-row: 2/span 2;
+        grid-column: 4/span 1;
+        height: 32rem;
+        object-fit: cover;
+    }
+    
+    .row > #g2img4{
+        margin-top: 2.4rem;
+        grid-row: 2/span 2;
+        grid-column: 5/span 1;
+        height: 32rem;
+        object-fit: cover;
+    }
+}
